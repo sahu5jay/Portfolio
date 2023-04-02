@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script&family=Explora&family=Great+Vibes&family=Lobster&family=Montserrat:ital@0;1&family=Moon+Dance&family=Ubuntu:ital@1&display=swap"
+        rel="stylesheet">
+
+
+        <script src="https://use.fontawesome.com/18aaf8b607.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="logo-j">j</span>Ay
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-times" onclick="closemenu()" aria-hidden="true"></i>
+                </ul>
+                <i class="fa fa-bars" onclick="openmenu()" aria-hidden="true"></i>
+        </div>
+        <div class="header-text">
+            Hi, <br> I'm Jay Sahu from Bhopal
+            <div class="deitals">
+                <div class="div-designer">
+                    <h2>Designer</h2>
+                    Product designer specialising in UI design system design
+                </div>
+                <div class="div-code">
+                    <h2>Coder</h2>
+                    Full stack developer Who writes clean,elegant efficient code
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="contaner">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/jayimg.png">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="title">About Me</h2>
+                    <p>Hi, I'm Jay Sahu web developer and UI designer currently doing my B-tech form Technocrats Institute of technology and completed my schooling from kamla nehru hr sec school,during this i have improved my skills in coding and latest technology. </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Disiging the website inter face</li>
+                            <li><span>Web Development</span><br>Web app developer</li>
+                            <li><span>SQL</span><br>Able to write SQL query</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span><br>A skilled fresher who want to use his skill for his company growth.</li>
+                            <!-- <li><span>Web Development</span><br>Web app developer</li>
+                            <li><span>SQL</span><br>Able to write SQL query</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>10th Kamla nehru hr sec school.</span><br>6.6 CGPA</li>
+                            <li><span>12th from Kamla Nehru hr sec school.</span><br>70%</li>
+                            <li><span>B-tech from Technocrats Institute of technology.</a></span><br>8.6 CGPA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="conteiner">
+            <h2 class="title">My services</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <h2>Web Development</h2>
+                    <p> develop the web applications that are functional, efficient, and visually appealing.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-crop" aria-hidden="true"></i>
+                    <h2>UI/UX Design</h2>
+                    <p> develop the web applications that are functional, efficient, and visually appealing.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-database" aria-hidden="true"></i>
+                    <h2>SQL</h2>
+                    <p> develop the web applications that are functional, efficient, and visually appealing.</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- -------------- portfolio ------------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="title">My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/music-inst.png">
+                    <div class="layer">
+                        <h3>Musical Instrument </h3>
+                        <p>This webside plays the sound of various musical instrument.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/musical-web.png">
+                    <div class="layer">
+                        <h3>Music website</h3>
+                        <p>This website is developed using front end of web Development.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/bg-about.jpg">
+                    <div class="layer">
+                        <h3>Music website</h3>
+                        <p>cfdcjhfkyf,hjglvj,hc bvjhmgf</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ---------contact--------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="title">Contact Me</h1>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i>jsahu0523@gmail.com</p>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i>7879182283</p>
+                    <div class="social-icons">
+                        <i href="https://facebook.com" class="fa fa-linkedin" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <a href="images/jayimg.png" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" cols="30" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ JAY. Made with <i class="fa fa-heart" aria-hidden="true"></i></p>
+    </div>
+  
+    <script src="index.js"></script>
+</body>
+
+</html>
